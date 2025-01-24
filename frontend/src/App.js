@@ -3,6 +3,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import './css/card.css';
 import './index.css';
+import MbtaAlertsPage from "./components/pages/mbtaAlerts";
 
 // We import all the components we need in our app
 import Navbar from "./components/navbar";
@@ -32,6 +33,7 @@ const App = () => {
           <Route exact path="/" element={<LandingPage />} />
           <Route exact path="/home" element={<HomePage />} />
           <Route exact path="/login" element={<Login />} />
+          <Route exact path="/mbtaAlerts" element={<MbtaAlertsPage />} />
           <Route exact path="/signup" element={<Signup />} />
           <Route path="/privateUserProfile" element={<PrivateUserProfile />} />
         </Routes>
