@@ -4,6 +4,9 @@ import { Route, Routes } from "react-router-dom";
 import './css/card.css';
 import './index.css';
 import MbtaAlertsPage from "./components/pages/mbtaAlerts";
+// import MbtaAlertsPagertsPage from "./components/pages/copyMbtaAlerts";
+import MbtaAlertsPage2 from "./components/pages/mbtaAlerts2";
+
 
 // We import all the components we need in our app
 import Navbar from "./components/navbar";
@@ -34,6 +37,7 @@ const App = () => {
           <Route exact path="/home" element={<HomePage />} />
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/mbtaAlerts" element={<MbtaAlertsPage />} />
+          <Route exact path="/mbtaAlerts2" element={<MbtaAlertsPage2 />} />
           <Route exact path="/signup" element={<Signup />} />
           <Route path="/privateUserProfile" element={<PrivateUserProfile />} />
         </Routes>
